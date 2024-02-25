@@ -62,7 +62,7 @@ export default function Home() {
     }
   }, [data]);
 
-  if (true) {
+  if (isLoading || !data) {
     return (
       <>
         <div className="border-b shadow-sm">
