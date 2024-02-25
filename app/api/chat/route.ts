@@ -22,6 +22,7 @@ export async function POST(req: Request) {
     "Using the data given above, answer the following question: " +
     latestMessage;
 
+
   const input = [{ content: message, role: "user" }];
 
   const response = await openai.chat.completions.create({
